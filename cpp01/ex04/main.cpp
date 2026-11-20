@@ -16,7 +16,7 @@
 
 int replaceWords(const std::string &inputFile, const std::string &oldWord, const std::string &newWord, const std::string &content)
 {
-	std::ofstream outfile(inputFile + ".replace");
+	std::ofstream outfile((inputFile + ".replace").c_str());
 	if (!outfile)
 	{
 		std::cerr << "Error: could not create output file." << std::endl;

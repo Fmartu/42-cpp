@@ -15,22 +15,14 @@
 
 int main( void )
 {
-	// Default constructor called
 	Fixed a;
 
-	// Copy constructor called
-	//Copy assignment operator called
 	Fixed b( a );
 
-	// Default constructor called
 	Fixed c;
 
-	// Copy assignment operator called
-	//getRawBits member function called
 	c = b;
 	
-	//getRawBits member function three times
-	//0 three times
 	std::cout << a.getRawBits() << std::endl;
 	std::cout << b.getRawBits() << std::endl;
 	std::cout << c.getRawBits() << std::endl;

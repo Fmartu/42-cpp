@@ -21,24 +21,23 @@ class			Fixed
 	public:
 		~Fixed(void);
 		Fixed(void);
-		Fixed(const float nbr); // Float constructor, float to fixed-point
-		Fixed(const int nbr); // Int constructor, int to f-p
-		Fixed(const Fixed &copy); // Copy constr, fixed 4rm fixed
+		Fixed(const float nbr);
+		Fixed(const int nbr);
+		Fixed(const Fixed &copy);
 
-		Fixed	&operator = (const Fixed &copy); // Assignment op, copies 4rm fixed
+		Fixed	&operator = (const Fixed &copy);
 
-		float	toFloat(void) const; //fixed-point to float-point
-		int		toInt(void) const; //fixed-point to int
-		int		getRawBits(void) const; //getter
-		void	setRawBits(const int raw); //setter
-
+		float	toFloat(void) const;
+		int		toInt(void) const;
+		int		getRawBits(void) const;
+		void	setRawBits(const int raw);
 
 	private:
-		static const int	fractbits = 8; // Number of bits reserved for fractional part
+		static const int	fractbits = 8;
 		int					i;
 
 };
 
-std::ostream	&operator << (std::ostream &str, Fixed const &fixed_nbr); //output  ostream simile  acout
+std::ostream	&operator << (std::ostream &str, Fixed const &fixed_nbr);
 
 #endif

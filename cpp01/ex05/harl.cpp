@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Harl.hpp"
+#include "harl.hpp"
 #include <string>
 #include <iostream>
 

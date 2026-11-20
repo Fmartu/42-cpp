@@ -46,9 +46,9 @@ Fixed::Fixed(const float nbr)
 
 	std::cout << "Float constructor called" << std::endl;
 
-	integer = nbr; //extraxt int
-	fractional = roundf((nbr - integer) * ft_pow(2, 8)); //fract part * 256 and round
-	i = integer << fractbits; //sllliiide to the left
+	integer = nbr;
+	fractional = roundf((nbr - integer) * ft_pow(2, 8));
+	i = integer << fractbits;
 	i += fractional;
 }
 

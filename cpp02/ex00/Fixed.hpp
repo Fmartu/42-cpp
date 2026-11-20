@@ -13,22 +13,19 @@
 #ifndef FIXED_HPP
 # define FIXED_HPP
 
-
 class	Fixed
 {
 
 	public:
-		~Fixed(void); // Destructor
-		Fixed(void); // Default constructor
-		Fixed(const Fixed &copy); // Copy constructor
-		Fixed	&operator = (const Fixed &copy); // Copy assignment operator
-		int		getRawBits(void) const; // returns the raw value of the fixed-point value
-		void	setRawBits(const int raw); //  sets the raw value of the fixed-point number
+		~Fixed(void);
+		Fixed(void);
+		Fixed(const Fixed &copy);
+		Fixed	&operator = (const Fixed &copy);
+		int		getRawBits(void) const;
+		void	setRawBits(const int raw);
 
 	private:
-		// Number of fractional bits (8 ---> 256 subdiv per int)
 		static const int	fractbits = 8;
-		// int that stores the fixpoint value, fp: [i][8_fb]
 		int					i;
 
 };
